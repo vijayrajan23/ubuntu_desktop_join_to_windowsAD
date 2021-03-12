@@ -70,7 +70,9 @@ ubuntu:~$ sudo systemctl restart ntp
 Setting up realmd:
 
 ubuntu:~$  sudo vim /etc/realmd.conf
+
 ...
+
 [users]
 
 default-home = /home/%D/%U
@@ -147,6 +149,7 @@ session optional pam_systemd.so
 session required pam_mkhomedir.so skel=/etc/skel/ umask=0077
 
 # end of pam-auth-update config
+
 ...
 
 ## Step14
